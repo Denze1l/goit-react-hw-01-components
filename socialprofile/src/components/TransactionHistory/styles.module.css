@@ -12,11 +12,33 @@ html {
 
 .transactionHistory {
   width: 30%;
-  border: 2px solid turquoise;
+  border: 1px solid gainsboro;
   border-collapse: collapse;
 }
 
 th,
 td {
-  border: 2px solid red;
+  border: 1px solid gainsboro;
+  text-align: center;
+  line-height: 25px;
+}
+
+th {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: rgb(36, 33, 204);
+}
+
+td {
+  font-weight: normal;
+  color: grey;
+  line-height: 30px;
+  text-transform: capitalize;
+}
+
+tr:nth-child(even) {
+  background-color: gainsboro;
 }

@@ -7,21 +7,21 @@ const UserProfile = ({ user }) => {
     <div className={styles.profile}>
       <div className={styles.description}>
         <img src={user.avatar} alt="user avatar" className={styles.avatar} />
-        <p className="name">{user.name}</p>
-        <p className="tag">{user.tag}</p>
-        <p className="location">{user.location}</p>
+        <p className={styles.name}>{user.name}</p>
+        <p className={styles.tag}>{user.tag}</p>
+        <p className={styles.location}>{user.location}</p>
       </div>
 
       <ul className={styles.stats}>
-        <li>
+        <li className={styles.eachStat}>
           <span className={styles.label}>Followers</span>
           <span className={styles.quantity}>{user.stats.followers}</span>
         </li>
-        <li>
+        <li className={styles.eachStat}>
           <span className={styles.label}>Views</span>
           <span className={styles.quantity}>{user.stats.views}</span>
         </li>
-        <li>
+        <li className={styles.eachStat}>
           <span className={styles.label}>Likes</span>
           <span className={styles.quantity}>{user.stats.likes}</span>
         </li>

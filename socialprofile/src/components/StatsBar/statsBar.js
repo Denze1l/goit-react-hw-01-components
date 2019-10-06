@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import randomColor from 'randomcolor';
 import Styles from './statsBar.module.css';
 
 const StatsBar = ({ title, stats }) => {
@@ -8,9 +9,13 @@ const StatsBar = ({ title, stats }) => {
       <h2 className={Styles.title}>{title}</h2>
       <ul className={Styles.statList}>
         {stats.map(elem => (
-          <li className={Styles.item} key={elem.id}>
+          <li
+            className={Styles.item}
+            key={elem.id}
+            style={{ backgroundColor: randomColor() }}
+          >
             <span className={Styles.label}>{elem.label}</span>
-            <span className="percentage">{elem.percentage}</span>
+            <span className={Styles.percentage}>{elem.percentage}%</span>
           </li>
         ))}
       </ul>

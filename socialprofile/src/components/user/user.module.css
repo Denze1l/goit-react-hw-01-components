@@ -1,7 +1,7 @@
 .profile {
   display: flex;
   flex-direction: column;
-  border: 2px solid tomato;
+  border: 1px solid black;
   width: 30%;
 }
 
@@ -9,21 +9,54 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 50px;
 }
 
 .avatar {
   border-radius: 50%;
-  width: 200px;
+  width: 150px;
 }
 
 .stats {
   list-style: none;
   display: flex;
   justify-content: center;
+  /* padding-bottom: 30px; */
+}
+.name {
+  padding-top: 50px;
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 15px;
 }
 
+.tag {
+  padding-bottom: 10px;
+  font-style: italic;
+  color: rgba(189, 173, 173, 0.74);
+}
+.location {
+  padding-bottom: 20px;
+  font-style: italic;
+  color: rgba(189, 173, 173, 0.74);
+}
 .label {
   display: block;
-  font-weight: bold;
+  color: gray;
+  padding-bottom: 8px;
+}
+
+.eachStat {
+  width: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: gainsboro;
+  border: 1px solid gray;
+  height: 100px;
+  justify-content: space-around;
+}
+
+.eachStat:not(:last-child) {
   padding-right: 10px;
 }

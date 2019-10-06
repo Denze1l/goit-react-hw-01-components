@@ -15,38 +15,42 @@ html {
   width: 30%;
   flex-direction: column;
   align-items: center;
-  border: 2px solid turquoise;
+  border: 1px solid black;
 }
 
 .title {
-  font-weight: bold;
+  font-weight: 500;
   padding: 20px;
+  text-transform: uppercase;
+  color: grey;
 }
 .statList {
   display: flex;
   justify-content: center;
   list-style: none;
-  padding: 30px;
+  padding-top: 10px;
+  width: 100%;
 }
 
 .label {
   display: block;
-  padding-bottom: 16px;
+  color: #fff;
+}
+
+.percentage {
+  color: #fff;
+  font-size: 20px;
 }
 
 .item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid rgb(0, 102, 255);
-  justify-content: center;
-  width: 50px;
-  border-radius: 10px;
+  justify-content: space-around;
+  width: calc(100% / 5);
+  height: 70px;
 }
 
-.item:hover {
+/* .item:hover {
   border: 2px solid red;
-}
-.item:not(:last-child) {
-  margin-right: 20px;
-}
+} */
